@@ -1,0 +1,113 @@
+.content{
+    left: 35%;
+    top: 30%;
+}
+.content h2{
+    font-size:60px;
+}
+.sideBar{
+    left:1%;
+  
+}
+.sideBar_Content {
+    width: 180px;
+    background-color: #414658;
+    display: none;
+}
+.sideBar_Content i{
+    font-size: 25px;
+}
+a{
+    font-size: 25px;
+}
+a:hover{
+    color: #D96668!important;
+}
+ul{
+    padding-top: 60px;
+   
+}
+.singer{
+    display: none;
+    background-color: #ccc;
+    padding: 10px;
+    font-size: 12px;
+}
+.details .container h3{
+    background-color: #E68285;
+    margin: 0px auto ;
+}
+.join img{
+    height: 330px;
+}
+.time{
+    padding: 50px;
+    border: 1px solid #FFF;
+   
+}
+.head h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.head p{
+    color: #777;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+}
+.info h3{
+    color: #444;
+    font-size: 18px;
+    font-weight: bold;
+}
+.info p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #777;
+}
+.icons p{
+    margin-bottom: 35px;
+}
+.hire-me i{
+    margin-right: 20px;
+    color: #777;
+}
+.email{
+    color: #D62E33 !important;
+}
+.social{
+    margin-top: 60px;
+    color: #777;
+}
+.social i{
+    margin-right: 10px;
+    border: 1px solid #999;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+    text-align: center;
+}
+.hire-me form input{
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+  
+textarea{
+    height: 200px;
+    margin-bottom: 20px;
+}
+#char{
+    font-size: 20px;
+    color: #D62E33;
+}
+.btn{
+    background-color: #D62E33;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0;
+    text-transform: uppercase;
+}
