@@ -11,128 +11,616 @@
     <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
-    <section class="home " id="home">
-        <img src="imgs/events-heavenly-header.jpg" class="vh-100 w-100  position-relative" alt="party">
-        <div class="layer bg-danger position-absolute top-0 start-0 bottom-0 end-0 opacity-50 position-relative "></div>
-        <div class="content text-white  position-absolute ">
-            <h2 class="text-center">Egyptian Party</h2>
-            <p  class="text-center">Let's have Fun</p>
-        </div>
-        <div class="sideBar d-flex position-absolute  top-50 text-white">
-            <i class="fa-solid fa-bars p-1">  </i>
-            <h5>Open</h5>
-        </div>
-        <div class="sideBar_Content vh-100 position-absolute start-0 top-0 py-5 ">
-            <i class="fa-solid fa-xmark float-end pe-2 text-white"></i>
-            <ul class="list-unstyled float-start " > 
-                <li class="p-3"><a href="#home" class="text-decoration-none text-white">Home</a> </li>
-                <li class="p-3"><a href="#details" class="text-decoration-none text-white">Details</a></li>
-                <li class="p-3"><a href="#duration" class="text-decoration-none text-white">Duration</a></li>
-                <li class="p-3" ><a href="#contact" class="text-decoration-none text-white">Contact</a></li>
+    <!-- Enhanced Modern Navbar -->
+    <nav class="modern-navbar" id="mainNavbar">
+        <div class="navbar-container">
+            <!-- Logo/Brand -->
+            <div class="navbar-brand">
+                <div class="brand-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">Egyptian Party</span>
+                    <span class="brand-tagline">2023</span>
+                </div>
+            </div>
+            
+            <!-- Desktop Navigation Menu -->
+            <ul class="navbar-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#details" class="nav-link">
+                        <i class="fas fa-microphone"></i>
+                        <span>Artists</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#duration" class="nav-link">
+                        <i class="fas fa-clock"></i>
+                        <span>Countdown</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-ticket-alt"></i>
+                        <span>Join Us</span>
+                    </a>
+                </li>
             </ul>
+            
+            <!-- CTA Button -->
+            <div class="navbar-cta">
+                <a href="#contact" class="cta-btn">
+                    <i class="fas fa-star me-2"></i>
+                    Get Tickets
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-header">
+                    <div class="mobile-brand">
+                        <i class="fas fa-music me-3"></i>
+                        Egyptian Party 2023
+        </div>
+                    <button class="mobile-menu-close" aria-label="Close mobile menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+        </div>
+                
+                <ul class="mobile-menu-list">
+                    <li class="mobile-nav-item">
+                        <a href="#home" class="mobile-nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="#details" class="mobile-nav-link">
+                            <i class="fas fa-microphone"></i>
+                            <span>Featured Artists</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="#duration" class="mobile-nav-link">
+                            <i class="fas fa-clock"></i>
+                            <span>Event Countdown</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="#contact" class="mobile-nav-link">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>Join the Party</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </li>
+            </ul>
+                
+                <div class="mobile-menu-footer">
+                    <div class="mobile-social-links">
+                        <a href="#" class="mobile-social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="mobile-social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="mobile-social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="mobile-social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="mobile-menu-tagline">Experience Egyptian Culture Like Never Before</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home" id="home">
+        <img src="imgs/events-heavenly-header.jpg" class="vh-100 w-100 position-relative" alt="party">
+        <div class="layer bg-danger position-absolute top-0 start-0 bottom-0 end-0 opacity-50 position-relative"></div>
+        <div class="content text-white position-absolute">
+            <h2 class="text-center">Egyptian Party</h2>
+            <p class="text-center">Let's have Fun</p>
         </div>
     </section>
     <section class="details py-5" id="details">
-        <div class="container w-50 m-auto  text-center">
-            <h3 class="text-white ">Singer one     </h3>
-            <div class="singer  text-black ">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Featured Artists</h2>
+                <p class="section-subtitle">Meet the incredible performers who will make this night unforgettable</p>
+                <div class="title-divider"></div>
             </div>
    
-            <h3  class="text-white">Singer two   </h3>
-            <div class="singer text-black">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            <!-- Artists Grid -->
+            <div class="row g-4">
+                <!-- Artist 1 -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="artist-card" data-artist="ahmed-saad">
+                        <div class="artist-header">
+                            <div class="artist-avatar">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">Ahmed Saad</h3>
+                                <span class="artist-genre">Egyptian Pop & Folk</span>
+                                <div class="artist-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <button class="expand-btn" aria-label="Show more about Ahmed Saad">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="artist-content">
+                            <div class="artist-stats">
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>8:00 PM</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Main Stage</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>5K+ Fans</span>
+                                </div>
+                            </div>
+                            <p class="artist-description">
+                                Ahmed Saad brings the authentic sounds of Egyptian street music to our party. Known for his powerful voice and energetic performances, he'll get everyone dancing with his mix of traditional and modern Egyptian hits.
+                            </p>
+                            <div class="artist-tags">
+                                <span class="tag">Traditional</span>
+                                <span class="tag">Modern</span>
+                                <span class="tag">Energetic</span>
+                            </div>
+                        </div>
+                    </div>
             </div>
      
-            <h3  class="text-white">Singer thre  </h3>
-            <div class=" singer  text-black">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-
+                <!-- Artist 2 -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="artist-card" data-artist="sherine">
+                        <div class="artist-header">
+                            <div class="artist-avatar">
+                                <i class="fas fa-microphone"></i>
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">Sherine Abdel Wahab</h3>
+                                <span class="artist-genre">Arabic Pop & Ballads</span>
+                                <div class="artist-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <button class="expand-btn" aria-label="Show more about Sherine Abdel Wahab">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="artist-content">
+                            <div class="artist-stats">
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>9:30 PM</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Main Stage</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>10K+ Fans</span>
+                                </div>
+                            </div>
+                            <p class="artist-description">
+                                One of the most beloved voices in the Arab world, Sherine will captivate the audience with her emotional ballads and uplifting pop songs that celebrate Egyptian culture and heritage.
+                            </p>
+                            <div class="artist-tags">
+                                <span class="tag">Ballads</span>
+                                <span class="tag">Emotional</span>
+                                <span class="tag">Cultural</span>
+                            </div>
+                        </div>
+                    </div>
             </div>
       
-            <h3  class="text-white">Singer four </h3>
-            <div class="singer text-black">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-
+                <!-- Artist 3 -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="artist-card" data-artist="mounir">
+                        <div class="artist-header">
+                            <div class="artist-avatar">
+                                <i class="fas fa-guitar"></i>
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">Mohamed Mounir</h3>
+                                <span class="artist-genre">Nubian Music & Rock Fusion</span>
+                                <div class="artist-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <button class="expand-btn" aria-label="Show more about Mohamed Mounir">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="artist-content">
+                            <div class="artist-stats">
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>11:00 PM</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Main Stage</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>15K+ Fans</span>
+                                </div>
+                            </div>
+                            <p class="artist-description">
+                                The "King of Arabic Music" Mohamed Mounir brings his unique blend of Nubian rhythms and contemporary rock. His performance promises to be a cultural journey through Egypt's rich musical landscape.
+                            </p>
+                            <div class="artist-tags">
+                                <span class="tag">Nubian</span>
+                                <span class="tag">Rock Fusion</span>
+                                <span class="tag">Legendary</span>
+                            </div>
+                        </div>
+                    </div>
             </div>
        
+                <!-- Artist 4 -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="artist-card" data-artist="kabaka">
+                        <div class="artist-header">
+                            <div class="artist-avatar">
+                                <i class="fas fa-headphones"></i>
+                            </div>
+                            <div class="artist-info">
+                                <h3 class="artist-name">DJ Kabaka</h3>
+                                <span class="artist-genre">Electronic Dance & Mahraganat</span>
+                                <div class="artist-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <button class="expand-btn" aria-label="Show more about DJ Kabaka">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="artist-content">
+                            <div class="artist-stats">
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>12:30 AM</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Dance Floor</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>8K+ Fans</span>
+                                </div>
+                            </div>
+                            <p class="artist-description">
+                                Egypt's premier electronic music producer will close the night with high-energy beats that blend traditional Egyptian instruments with modern electronic dance music, keeping the party alive until dawn.
+                            </p>
+                            <div class="artist-tags">
+                                <span class="tag">Electronic</span>
+                                <span class="tag">High-Energy</span>
+                                <span class="tag">Mahraganat</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="counter" id="duration">
-        <div class="join position-relative ">
-          <img src="imgs/invitation-2508607__340.jpg" class="w-100 " alt="countdown">
-     
-        <div class="pinklayer position-absolute w-100   bg-danger opacity-50 top-0 start-0 h-100">
-            <div class="container d-flex justify-content-center align-items-center my-5 ">
-                <div class="col-3 w-25 py-5 mx-4">
-                    <div id="days" class="time text-center text-white">
-                     
+        <div class="countdown-wrapper">
+            <!-- Background Image with Overlay -->
+            <div class="countdown-bg">
+                <img src="imgs/invitation-2508607__340.jpg" class="w-100" alt="Party countdown background">
+                <div class="countdown-overlay"></div>
+            </div>
+            
+            <!-- Countdown Content -->
+            <div class="countdown-content">
+                <div class="container">
+                    <!-- Section Header -->
+                    <div class="countdown-header text-center mb-5">
+                        <h2 class="countdown-title">Party Starts In</h2>
+                        <p class="countdown-subtitle">Don't miss the biggest Egyptian party of the year!</p>
+                        <div class="countdown-divider"></div>
+                    </div>
+                    
+                    <!-- Countdown Timer -->
+                    <div class="countdown-grid">
+                        <div class="countdown-item">
+                            <div class="time-card" id="days">
+                                <div class="time-number">00</div>
+                                <div class="time-label">Days</div>
+                                <div class="time-progress">
+                                    <div class="progress-bar" data-max="365"></div>
+                                </div>
                     </div>
                 </div>
-                <div class="col-3 w-25 py-5 mx-4">
-                    <div id="hours" class="time text-center text-white">
                         
+                        <div class="countdown-item">
+                            <div class="time-card" id="hours">
+                                <div class="time-number">00</div>
+                                <div class="time-label">Hours</div>
+                                <div class="time-progress">
+                                    <div class="progress-bar" data-max="24"></div>
+                                </div>
                     </div>
                 </div>
-                <div class="col-3 w-25 py-5 mx-4">
-                    <div id="minutes" class="time text-center text-white">
-                       
+                        
+                        <div class="countdown-item">
+                            <div class="time-card" id="minutes">
+                                <div class="time-number">00</div>
+                                <div class="time-label">Minutes</div>
+                                <div class="time-progress">
+                                    <div class="progress-bar" data-max="60"></div>
+                                </div>
                     </div>
                 </div>
-                <div class="col-3 w-25 py-5 mx-4">
-                    <div id="seconds" class="time text-center text-white ">
-                     
+                        
+                        <div class="countdown-item">
+                            <div class="time-card" id="seconds">
+                                <div class="time-number">00</div>
+                                <div class="time-label">Seconds</div>
+                                <div class="time-progress">
+                                    <div class="progress-bar" data-max="60"></div>
                     </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Call to Action -->
+                    <div class="countdown-cta text-center mt-5">
+                        <p class="cta-text">Ready to join the celebration?</p>
+                        <a href="#contact" class="cta-button">
+                            <i class="fas fa-ticket-alt me-2"></i>
+                            Get Your Ticket Now
+                        </a>
                 </div>
             </div>
         </div>
     </div>
     </section>
-    <section class="hire-me mt-5" id="contact">
-        <div class="container">
-            <div class="head">
-                <h2>Join Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <section class="contact-section" id="contact">
+        <div class="contact-wrapper">
+            <!-- Section Header -->
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <h2 class="section-title">Join the Celebration</h2>
+                    <p class="section-subtitle">Reserve your spot at Egypt's most anticipated party event</p>
+                    <div class="title-divider"></div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="info text-start">
-                        <h3>CONTACT INFO</h3>
-                        <p>Why you should hire me writeup Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque nascetur ridiculus mus.</p>
-                            <div class="icons mt-5">
-                                <p>
-                                    <i class="fa fa-map-marker"></i>
-                                    New Street 22545, Nexa Road, New York City, USA
+            
+            <!-- Contact Content -->
+        <div class="container">
+                <div class="row g-5">
+                    <!-- Event Information -->
+                    <div class="col-lg-6">
+                        <div class="event-info-card">
+                            <div class="card-header">
+                                <h3 class="card-title">
+                                    <i class="fas fa-calendar-star me-3"></i>
+                                    Event Information
+                                </h3>
+            </div>
+                            
+                            <div class="card-content">
+                                <p class="event-description">
+                                    Join us for an unforgettable night of Egyptian music, culture, and celebration. 
+                                    Experience the best of traditional and modern entertainment in a spectacular venue.
                                 </p>
-                                <p class="email">
-                                    <i class="fa fa-envelope"></i>
-                                    hello@uigrid.com</p>
-                                    <p>
-                                        <i class="fa fa-phone"></i>
-                                        001-000-000-000
-                                    </p>
+                                
+                                <div class="event-details">
+                                    <div class="detail-item">
+                                        <div class="detail-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="detail-content">
+                                            <h4>Venue</h4>
+                                            <p>Grand Egyptian Cultural Center<br>
+                                            Cairo Festival City, New Cairo</p>
+                                        </div>
                             </div>
-                            <div class="social">
-                                <i class="fa-brands fa-facebook-f fa-lg"></i>
-                              
-                                <i class="fa-brands fa-twitter fa-lg"></i>
-                                <i class="fa-brands fa-google-plus-g fa-lg"></i>
-                                <i class="fa-brands fa-github fa-lg"></i>
-                                <i class="fa-brands fa-behance fa-lg"></i>
-                                <i class="fa-brands fa-dribbble fa-lg"></i>
-
-
+                                    
+                                    <div class="detail-item">
+                                        <div class="detail-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="detail-content">
+                                            <h4>Contact</h4>
+                                            <p>info@egyptianparty.com<br>
+                                            +20 100 123 4567</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-item">
+                                        <div class="detail-icon">
+                                            <i class="fas fa-ticket-alt"></i>
+                                        </div>
+                                        <div class="detail-content">
+                                            <h4>Tickets</h4>
+                                            <p>Early Bird: 250 EGP<br>
+                                            Regular: 350 EGP</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Social Media -->
+                                <div class="social-section">
+                                    <h4 class="social-title">Follow Us</h4>
+                                    <div class="social-links">
+                                        <a href="#" class="social-link facebook" aria-label="Follow us on Facebook">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" class="social-link twitter" aria-label="Follow us on Twitter">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#" class="social-link instagram" aria-label="Follow us on Instagram">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="#" class="social-link youtube" aria-label="Subscribe to our YouTube">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                        <a href="#" class="social-link tiktok" aria-label="Follow us on TikTok">
+                                            <i class="fab fa-tiktok"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <form > 
-                        <input class="form-control input-lg" type="text" placeholder="Enter Name">
-                        <input class="form-control input-lg" type="email" placeholder="Enter Email">
-                        <textarea class="form-control input-lg" placeholder="Enter Message"></textarea>
-                        <span id="char">100</span>
-                        Characyer Reamining
-                        <button style="display:block;margin-top:20px" class="btn">Send Message</button>
-
-
+                    
+                    <!-- Registration Form -->
+                    <div class="col-lg-6">
+                        <div class="registration-card">
+                            <div class="card-header">
+                                <h3 class="card-title">
+                                    <i class="fas fa-user-plus me-3"></i>
+                                    Reserve Your Spot
+                                </h3>
+                            </div>
+                            
+                            <div class="card-content">
+                                <form class="registration-form" id="partyRegistrationForm">
+                                    <div class="form-group">
+                                        <label for="fullName" class="form-label">
+                                            <i class="fas fa-user me-2"></i>Full Name
+                                        </label>
+                                        <input 
+                                            type="text" 
+                                            id="fullName" 
+                                            name="fullName"
+                                            class="form-control" 
+                                            placeholder="Enter your full name" 
+                                            required 
+                                            aria-label="Your full name"
+                                        >
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">
+                                            <i class="fas fa-envelope me-2"></i>Email Address
+                                        </label>
+                                        <input 
+                                            type="email" 
+                                            id="email" 
+                                            name="email"
+                                            class="form-control" 
+                                            placeholder="Enter your email address" 
+                                            required 
+                                            aria-label="Your email address"
+                                        >
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="phone" class="form-label">
+                                            <i class="fas fa-phone me-2"></i>Phone Number
+                                        </label>
+                                        <input 
+                                            type="tel" 
+                                            id="phone" 
+                                            name="phone"
+                                            class="form-control" 
+                                            placeholder="Enter your phone number" 
+                                            required 
+                                            aria-label="Your phone number"
+                                        >
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="ticketType" class="form-label">
+                                            <i class="fas fa-ticket-alt me-2"></i>Ticket Type
+                                        </label>
+                                        <select 
+                                            id="ticketType" 
+                                            name="ticketType"
+                                            class="form-control" 
+                                            required 
+                                            aria-label="Select ticket type"
+                                        >
+                                            <option value="">Select ticket type</option>
+                                            <option value="early-bird">Early Bird - 250 EGP</option>
+                                            <option value="regular">Regular - 350 EGP</option>
+                                            <option value="vip">VIP - 500 EGP</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="message" class="form-label">
+                                            <i class="fas fa-comment me-2"></i>Special Requests (Optional)
+                                        </label>
+                                        <textarea 
+                                            id="message" 
+                                            name="message"
+                                            class="form-control" 
+                                            placeholder="Any special requests or dietary requirements..." 
+                                            maxlength="200" 
+                                            rows="4"
+                                            aria-label="Special requests or message"
+                                        ></textarea>
+                                        <div class="character-count">
+                                            <span id="char" class="count-number">200</span>
+                                            <span class="count-label">characters remaining</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <button type="submit" class="submit-btn">
+                                        <span class="btn-content">
+                                            <i class="fas fa-paper-plane me-2"></i>
+                                            Reserve My Spot
+                                        </span>
+                                        <div class="btn-loader">
+                                            <i class="fas fa-spinner fa-spin"></i>
+                                        </div>
+                                    </button>
                     </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
